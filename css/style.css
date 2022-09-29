@@ -1,0 +1,178 @@
+@font-face {
+    font-family: 'Netflix Sans';
+    src: url(../fonts/NetflixSans-Light.otf);
+}
+
+@font-face {
+    font-family: 'icones';
+    src: url(../fonts/nf-icons.ttf);
+}
+
+body {
+    background-color: #000;
+    font-family: 'Netflix Sans', 'icones', sans-serif;
+    font-size: 16px;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ----- Header ----- */
+
+header {
+    height: 0;
+    display: flex;
+    position: relative;
+    margin: 30px 5% -40px;
+    justify-content: space-between;
+    align-items: flex-start;
+    z-index: 10;
+}
+
+.header__logo {
+    width: 90px;
+}
+
+.header__seletor-botao {
+    display: flex;
+    align-items: center;
+}
+
+.header__seletor-wrapper {
+    border: 1px solid #aaa;
+    border-radius: 2px;
+    line-height: 1.3em;
+    white-space: nowrap;
+    font-size: 0.9rem;
+    padding: 0.3rem 1.375rem;
+    margin: 0 0.75rem;
+    position: relative;
+}
+
+.header__seletor-wrapper::before {
+    position: absolute;
+    font-size: .75rem;
+    top: 20%;
+    left: .4rem;
+    content: "\e896";
+}
+
+.header__seletor-wrapper::after {
+    position: absolute;
+    right: 10px;
+    top: 20%;
+    content: "\e898";
+    font-size: 6px;
+}
+
+.seletor-lang {
+    background-color: rgba(0, 0, 0, 0);
+    line-height: 1.3em;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.header__botao-login {
+    background-color: #e50914;
+    border-radius: 3px;
+    padding: 0.4rem 0.5rem;
+    font-size: .9rem;
+}
+
+
+/* ----- Primeira Parte ----- */
+
+.comecar {
+    background-image: url(../img/bg-first-page.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-bottom: 8px solid #222;
+    margin-bottom: 0;
+    position: relative;
+    height: 555px;
+    line-height: 1.1;
+}
+
+.comecar::before {
+    content: '';
+    height: 135px;
+    display: block;
+    background: linear-gradient(360deg, rgba(0,0,0,0.35) 0%, #000 85%);
+}
+
+.comecar::after {
+    content: '';
+    height: 9.5%;
+    display: block;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.35) -200%, #000 200%);
+}
+
+.comecar__container {
+    padding: 1.5rem;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.35) 0%, #000 200%);;
+    text-align: center;
+}
+
+.comecar__titulo {
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+
+.comecar__legenda {
+    font-size: 1.125rem;
+    margin: 1rem auto;
+}
+
+.comecar__formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario__titulo {
+    padding: 0 10%;
+    font-size: 1.125rem;
+}
+
+.formulario__requisicao-email {
+    text-align: center;
+}
+
+.formulario__escreve-email {
+    margin: 10px auto;
+    height: 48px;
+    padding: 10px 10px 0;
+    width: 100%;
+    color: #000;
+    border-radius: 2px;
+    border: 1px solid #8c8c8c;
+    -webkit-appearance: none;
+    appearance: none;
+    font-size: 1rem;
+    box-sizing: border-box;
+    box-shadow: none;
+}
+
+.formulario__escreve-email::placeholder {
+    color: #8c8c8c;
+    font-size: 14px;
+    left: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.formulario__botao-comecar {
+    display: flex;
+    background-color: #e50914;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem auto;
+    align-items: center;
+}
+
+.comecar__icone {
+    padding-left: 5px;
+}

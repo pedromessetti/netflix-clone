@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix - Inscreva-se (Clone)</title>
+    <link rel="icon" href="img/n-logo.png">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <header>
+        <img src="img/netflix-logo.png" alt="Logo Netflix" class="header__logo">
+        <div class="header__seletor-botao">
+            <div class="header__seletor-wrapper">
+                <select id="troca-lang" class="seletor-lang">
+                    <option selected value="/pt/" lang="pt">Português</option>
+                    <option value="/pt-en/" lang="en">English</option>
+                </select>
+            </div>
+            <a href="#" class="header__botao-login">Iniciar sessão</a>
+        </div>
+    </header>
+    
+    <main>
+        <section class="comecar">
+            <div class="comecar__container">
+                <div class="comecar__textos">
+                    <h1 class="comecar__titulo">Acesso ilimitado a séries e filmes e muito mais.</h1>
+                    <p class="comecar__legenda">Veja em qualquer lugar. Cancele quando quiser.</p>
+                </div>
+                <form class="comecar__formulario" method="get">
+                    <h2 class="formulario__titulo">Quer começar a ver? Introduza o seu e-mail para criar ou reativar a sua conta.</h2>
+                    <div class="formulario__requisicao-email">
+                        <input type="email" name="email" id="comecar__email" class="formulario__escreve-email" placeholder="Endereço de e-mail">
+                        <button class="formulario__botao-comecar" type="submit">Começar<ion-icon name="chevron-forward-outline" class="comecar__icone"></ion-icon></button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
