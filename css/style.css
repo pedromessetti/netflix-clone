@@ -19,6 +19,7 @@ h1 {
     font-size: 1.625rem;
     font-weight: 700;
     margin: 0 0 0.4em;
+    text-align: center;
 }
 
 h2 {
@@ -391,3 +392,41 @@ video {
 .criancas .televisao__container {
     margin-top: 3em;
 }
+
+.faq {
+    padding: 50px 0;
+    line-height: 1.2;
+    border-bottom: 8px solid #222;
+}
+
+.faq__lista {
+    margin: 1.25rem auto;
+}
+
+.faq__item {
+    font-size: 1.125rem;
+    margin-bottom: 1px;
+    padding: 0.8em 2.2em 0.8em 1.2em;
+    position: relative;
+    width: 100%;
+    background: #303030;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+button {
+    display: contents;
+}
+
+.faq__item ion-icon {
+    float: right;
+    transform: translateX(100%);
+    font-size: 2rem;
+}
+
+.faq form {
+    padding: 0 5%;
+    text-align: center;
+    font-weight: 600;
+}
+
