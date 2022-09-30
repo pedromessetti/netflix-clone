@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Netflix Sans';
-    src: url(../fonts/NetflixSans-Light.otf);
+    src: url(../fonts/NetflixSans-Light.woff2);
 }
 
 @font-face {
@@ -13,6 +13,17 @@ body {
     font-family: 'Netflix Sans', 'icones', sans-serif;
     font-size: 16px;
     color: #fff;
+}
+
+h1 {
+    font-size: 1.625rem;
+    font-weight: 700;
+    margin: 0 0 0.4em;
+}
+
+h2 {
+    font-size: 1.125rem;
+    margin: 0.75em 0 0.25em;
 }
 
 a {
@@ -111,7 +122,7 @@ header {
 
 .comecar::after {
     content: '';
-    height: 9.5%;
+    height: 6.25%;
     display: block;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.35) -200%, #000 200%);
 }
@@ -348,4 +359,35 @@ video {
     outline: 2px solid #000;
     outline-offset: -2px;
     width: 3em;
+}
+
+
+/* ----- Dispositivos ----- */
+
+.dispositivos {
+    border-bottom: 8px solid #222;
+    padding: 50px 5%;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.dispositivos .televisor__video {
+    max-height: 47%;
+    max-width: 63%;
+    top: 34%;
+}
+
+.dispositivos .televisao__container {
+    margin-top: 2.5em;
+}
+
+.criancas {
+    padding: 50px 5%;
+    border-bottom: 8px solid #222;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.criancas .televisao__container {
+    margin-top: 3em;
 }
