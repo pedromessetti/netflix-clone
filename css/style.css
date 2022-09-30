@@ -19,6 +19,11 @@ a {
     text-decoration: none;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 /* ----- Header ----- */
 
 header {
@@ -175,4 +180,172 @@ header {
 
 .comecar__icone {
     padding-left: 5px;
+}
+
+
+/* ----- Televisor ----- */
+
+.televisor {
+    padding: 50px 7%;
+    line-height: 1.1;
+    border-bottom: 8px solid #222;
+}
+
+.televisor__titulo {
+    font-size: 1.625rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: .5rem;
+}
+
+.televisor__dispositivos {
+    font-size: 1.125rem;
+    text-align: center;
+    margin: 0.75em 0 0.25em;
+}
+
+.televisor__animacao {
+    margin: -10% 2% 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.televisor__animacao img {
+    position: relative;
+    z-index: -1;
+    max-width: 100%;
+    border: 0;
+    height: auto;
+}
+
+.televisor__video {
+    height: 100%;
+    left: 50%;
+    max-height: 54%;
+    max-width: 73%;
+    position: absolute;
+    top: 46%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    z-index: -2;
+}
+
+video {
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    vertical-align: baseline;
+}
+
+.televisao__container {
+    box-sizing: border-box;
+    display: flex;
+    flex: 0 1 auto;
+    height: 100%;
+    margin-top: 1em;
+    max-width: 600px;
+    width: 100%;
+}
+
+
+/* ----- Transferir ----- */
+
+.transferir {
+    padding: 50px 5%;
+    border-bottom: 8px solid #222;
+    line-height: 1.1;
+}
+
+.transferir__textos {
+    text-align: center;
+}
+
+.transferir__titulo {
+    font-size: 1.625rem;
+    font-weight: 700;
+    margin: 0 0 0.4em;
+}
+
+.transferir__legenda {
+    font-size: 1.125rem;
+    margin: 0.75em 0 0.25em;
+}
+
+.transferir__container {
+    box-sizing: border-box;
+    display: flex;
+    flex: 0 1 auto;
+    height: 100%;
+    margin-top: 1em;
+    max-width: 600px;
+    width: 100%;
+}
+
+.transferir__animacao {
+    margin: -8% 0 0;
+    overflow: hidden;
+    position: relative;
+    z-index: -1;
+}
+
+.transferir__animacao img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container-animacao {
+    align-items: center;
+    background: #000;
+    border: 2px solid hsla(0,0%,100%,.25);
+    border-radius: 0.75em;
+    bottom: 8%;
+    box-shadow: 0 0 2em 0 #000;
+    display: flex;
+    left: 50%;
+    margin: 0 auto;
+    min-width: 15em;
+    position: absolute;
+    transform: translateX(-50%);
+    width: 70%;
+    padding: 0.35em 0.75em;
+}
+
+.animacao__capa {
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin: 0 1em 0 0;
+}
+
+.animacao__capa img {
+    height: 3em;
+}
+
+.animacao__textos {
+    flex-grow: 1;
+    flex-shrink: 1;
+    margin: .3em 0;
+}
+
+.animacao__titulo {
+    font-size: .9rem;
+    font-weight: 600;
+}
+
+.animacao__legenda {
+    color: #0071eb;
+    font-size: .7rem;
+    margin-top: .2rem;
+}
+
+.animacao__download {
+    background: url(../img/download-icon.gif);
+    background-size: 100%;
+    content: "";
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 0;
+    height: 3em;
+    outline: 2px solid #000;
+    outline-offset: -2px;
+    width: 3em;
 }
