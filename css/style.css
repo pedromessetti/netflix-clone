@@ -430,3 +430,48 @@ button {
     font-weight: 600;
 }
 
+
+footer {
+    color: #737373;
+    font-size: 13px;
+    padding: 50px 5%;
+}
+
+.footer__textos {
+    margin: 0 5% 10%;
+}
+
+.footer__ligue {
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.footer__links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 1.2rem;
+    width: 100%;
+}
+
+footer .header__seletor-wrapper {
+    width: fit-content;
+    font-size: 16px;
+    font-weight: 700;
+    padding: .7rem 2rem;
+    border: .5px solid #737373;
+    margin-bottom: 5%;
+}
+
+footer .header__seletor-wrapper::before {
+    font-size: 16px;
+    top: 14px;
+}
+
+footer .header__seletor-wrapper::after {
+    right: 15px;
+    top: 30%;
+}
+
+.footer__pais {
+    padding: 0 5%;
+}
